@@ -1,0 +1,37 @@
+
+
+
+#ifdef DEBUG //代表调试状态
+#define CZLog(...) NSLog(__VA_ARGS__)//给NSLog取个别名
+#else
+#define CZLog(...)
+#endif
+
+#ifdef __OBJC__
+
+#import "NSDictionary+LogProperty.h"
+#import "UIView+Frame.h"
+#import "UIImage+Rendering.h"
+#import "UIBarButtonItem+Custom.h"
+#import "UIColor+Random.h"
+#import "UIView+CAAnimation.h"
+#import "SandBoxPaths.h"
+#import "NSString+XMGExtension.h"
+#import "NSDate+Time.h"
+
+
+
+#define CZFunc() CZLog(@"%s", __func__);
+
+
+#define iPhoneSize [UIScreen mainScreen].bounds.size
+#define iPhoneH    iPhoneSize.height
+#define iPhoneW     iPhoneSize.width
+
+#define iPhone5 (iPhoneSize.height == 568)
+#define iPhone6 (iPhoneSize.height == 667)
+#define iPhone6p (iPhoneSize.height == 736)
+#define iPhone4 (iPhoneSize.height == 480)
+
+
+#endif

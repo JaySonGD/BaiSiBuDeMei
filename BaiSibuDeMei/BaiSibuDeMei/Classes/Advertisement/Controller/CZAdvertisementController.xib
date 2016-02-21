@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CZAdvertisementController">
+            <connections>
+                <outlet property="contentView" destination="fDM-9c-vtD" id="i21-Ye-J17"/>
+                <outlet property="jumpBtn" destination="jmu-Oa-g6r" id="8NU-RL-Ge2"/>
+                <outlet property="launchImageView" destination="9UG-xM-vBj" id="bF6-9Z-Bv8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9UG-xM-vBj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDM-9c-vtD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmu-Oa-g6r">
+                    <rect key="frame" x="293" y="44" width="60" height="25"/>
+                    <color key="backgroundColor" red="0.49803921580314636" green="0.49803921580314636" blue="0.49803921580314636" alpha="0.73999999999999999" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="0l2-N3-DUW"/>
+                        <constraint firstAttribute="width" constant="60" id="Ahy-Nd-105"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="跳转 (3)">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="jumpClick" destination="-1" eventType="touchUpInside" id="qTM-tw-rGw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9UG-xM-vBj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3wP-Ha-JQv"/>
+                <constraint firstItem="fDM-9c-vtD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="87i-cb-1Wb"/>
+                <constraint firstAttribute="trailing" secondItem="9UG-xM-vBj" secondAttribute="trailing" id="BhM-HZ-lEU"/>
+                <constraint firstAttribute="bottom" secondItem="9UG-xM-vBj" secondAttribute="bottom" id="CTH-Dy-UwR"/>
+                <constraint firstAttribute="trailing" secondItem="jmu-Oa-g6r" secondAttribute="trailing" constant="22" id="PQS-g0-sbT"/>
+                <constraint firstAttribute="trailing" secondItem="fDM-9c-vtD" secondAttribute="trailing" id="Sbs-k0-hIh"/>
+                <constraint firstItem="9UG-xM-vBj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="V0l-Tg-t0z"/>
+                <constraint firstItem="jmu-Oa-g6r" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="VQv-ub-Gsf"/>
+                <constraint firstItem="fDM-9c-vtD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dIk-L5-Cse"/>
+                <constraint firstAttribute="bottom" secondItem="fDM-9c-vtD" secondAttribute="bottom" id="hVf-iY-Rbo"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="338.5" y="283.5"/>
+        </view>
+    </objects>
+</document>
