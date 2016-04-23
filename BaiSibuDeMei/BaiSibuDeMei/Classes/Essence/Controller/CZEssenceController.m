@@ -40,6 +40,10 @@
     
     [UIApplication sharedApplication].statusBarHidden = NO;
     
+    NSLog(@"%@",NSHomeDirectory());
+    
+    
+    
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonTiemWithNormalImage:[UIImage imageNamed:@"nav_item_game_icon"] highlightedImage:[UIImage imageNamed:@"nav_item_game_click_icon"] addTarget:self action:@selector(leftBtnClick)];
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonTiemWithNormalImage:[UIImage imageNamed:@"navigationButtonRandom"] highlightedImage:[UIImage imageNamed:@"navigationButtonRandomClick"] addTarget:self action:@selector(rightBtnClick)];

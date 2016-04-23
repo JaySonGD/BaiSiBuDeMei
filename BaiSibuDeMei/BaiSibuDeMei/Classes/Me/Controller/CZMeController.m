@@ -199,8 +199,8 @@ NSInteger count = 4;
     NSInteger sectionCount = 2;
     CGFloat h = 32;
     
-    
-    CGFloat tagHeight = ( count + (sectionCount - 1) ) / sectionCount * h * (( count + (sectionCount - 1) ) / sectionCount - 1) ;
+    // 5/2*32 + (5/2-1)
+    CGFloat tagHeight = ( count + (sectionCount - 1) ) / sectionCount * h + (( count + (sectionCount - 1) ) / sectionCount - 1) ;
     CGSize size={self.view.width,tagHeight};
     return size;
 }
@@ -292,7 +292,7 @@ NSInteger count = 4;
         CGFloat h = 32;
         
         
-        CGFloat tagHeight = ( count + (sectionCount - 1) ) / sectionCount * h * (( count + (sectionCount - 1) ) / sectionCount - 1) ;
+        CGFloat tagHeight = ( count + (sectionCount - 1) ) / sectionCount * h + (( count + (sectionCount - 1) ) / sectionCount - 1) ;
         
         _footView.height = hw * rows   + 15 + tagHeight;
         
