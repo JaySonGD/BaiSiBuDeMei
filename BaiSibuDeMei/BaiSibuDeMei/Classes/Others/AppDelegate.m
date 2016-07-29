@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "FPSLable.h"
+#import <AFNetworkActivityIndicatorManager.h>
+#import <AFNetworkReachabilityManager.h>
 
 
 #import "CZTabBarController.h"
@@ -15,6 +18,8 @@
 @interface AppDelegate ()
 
 @end
+
+static UIWindow *window_;
 
 @implementation AppDelegate
 
@@ -30,6 +35,25 @@
     CZAdvertisementController *adVC = [[CZAdvertisementController alloc] init];
     self.window.rootViewController = adVC;
     [self.window makeKeyAndVisible];
+    
+    window_ = [[UIWindow alloc] init];
+//    window_.windowLevel = UIWindowLevelAlert;
+    window_.rootViewController = [UIViewController new];
+    window_.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 20);
+    window_.backgroundColor = [UIColor clearColor];
+//    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+
+    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
+    [AFNetworkActivityIndicatorManager sharedManager].completionDelay = 0;
+    [AFNetworkActivityIndicatorManager sharedManager].activationDelay = 0;
+    FPSLable *lable = [[FPSLable alloc] init];
+    lable.x = 180;
+    lable.y = 0;
+    lable.height = 20;
+    lable.width = 64;
+    [window_.rootViewController.view addSubview:lable];
+    
+    window_.hidden = NO;
     return YES;
 }
 

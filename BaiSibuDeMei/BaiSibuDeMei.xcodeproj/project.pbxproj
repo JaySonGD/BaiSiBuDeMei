@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		164E9038677DE7F548366F1A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C901B514E84E872FE6CCF45 /* libPods.a */; };
+		AB0274181D0BE8E7006BCEFB /* FPSLable.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0274161D0BE8E7006BCEFB /* FPSLable.m */; };
 		AB05C85C1C68522700BCE9D0 /* CZFontCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB05C85A1C68522700BCE9D0 /* CZFontCell.m */; };
 		AB05C85D1C68522700BCE9D0 /* CZFontCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB05C85B1C68522700BCE9D0 /* CZFontCell.xib */; };
 		AB0C07711C523F750096DB0F /* CZLoginRegisterTF.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0C07701C523F750096DB0F /* CZLoginRegisterTF.m */; };
@@ -133,6 +134,8 @@
 		14C05A63F3A0EAB9E18765D4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		47D7D896F697FE5556BF27EE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5C901B514E84E872FE6CCF45 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0274161D0BE8E7006BCEFB /* FPSLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLable.m; sourceTree = "<group>"; };
+		AB0274171D0BE8E7006BCEFB /* FPSLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLable.h; sourceTree = "<group>"; };
 		AB05C8591C68522700BCE9D0 /* CZFontCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZFontCell.h; sourceTree = "<group>"; };
 		AB05C85A1C68522700BCE9D0 /* CZFontCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZFontCell.m; sourceTree = "<group>"; };
 		AB05C85B1C68522700BCE9D0 /* CZFontCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZFontCell.xib; sourceTree = "<group>"; };
@@ -732,6 +735,8 @@
 		ABFB87C71C4E4B6E005212FF /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				AB0274161D0BE8E7006BCEFB /* FPSLable.m */,
+				AB0274171D0BE8E7006BCEFB /* FPSLable.h */,
 				ABFB87FB1C4E4F6F005212FF /* BaiSibuDeMei.pch */,
 				ABFB87C81C4E4B6E005212FF /* AppDelegate.h */,
 				ABFB87C91C4E4B6E005212FF /* AppDelegate.m */,
@@ -1152,6 +1157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABFB23491C5281D900F5E4DA /* CZSquareItem.m in Sources */,
+				AB0274181D0BE8E7006BCEFB /* FPSLable.m in Sources */,
 				ABFB88171C4E75F8005212FF /* CZAdvertisementController.m in Sources */,
 				AB9D6E5E1C5130860034CF2D /* CZLoginRegister.m in Sources */,
 				ABBC24E51C599BCA005E5251 /* NSDictionary+LogProperty.m in Sources */,
@@ -1357,12 +1363,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = BaiSibuDeMei/Classes/Others/BaiSibuDeMei.pch;
 				INFOPLIST_FILE = BaiSibuDeMei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CZ.BaiSibuDeMei.mmm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mshy.mashanghaoyun6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1373,12 +1382,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = BaiSibuDeMei/Classes/Others/BaiSibuDeMei.pch;
 				INFOPLIST_FILE = BaiSibuDeMei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CZ.BaiSibuDeMei.mmm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mshy.mashanghaoyun6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
